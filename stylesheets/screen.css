@@ -194,7 +194,7 @@ body section article .footnote {
   border: #cbcbcb 1px solid;
 }
 
-@media (min-width: 640px) {
+@media (min-width: 720px) {
   /* line 139, ../sass/screen.scss */
   body section {
     width: 400px;
