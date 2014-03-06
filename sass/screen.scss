@@ -38,6 +38,7 @@ body section{
 				color: $light-grey;
 			}
 		}
+
 		h2{
 			font-size: 1.2em;
 			color: $beige;
@@ -56,12 +57,14 @@ body section{
 			}
 		}
 	}
+
 	.background{
 		background: url('../images/background1.jpg') center top no-repeat;
 		position: relative;
 		background-size: 100%;
 		height: 150px;
 	}
+
 	article{
 		padding: 30px;
 		background: white;
@@ -79,10 +82,12 @@ body section{
 			border-bottom: $light-grey 1px solid;
 			text-align: center;
 		}
+
 		h2{
 			font-weight: bold;
 			margin-bottom: 4px;
 		}
+
 		p{
 			margin-bottom: 18px;
 
@@ -90,7 +95,7 @@ body section{
 				margin-bottom: 0px;
 			}
 		}
-		
+
 		ul {
 			margin-bottom: 18px;
 			line-height: 24px;
@@ -110,14 +115,17 @@ body section{
 				}
 			}
 		}
+
 		div{
 			display: inline-block;
 			vertical-align: top;
 			width: 49%;
 		}
+
 		iframe{
 			margin-top: 28px;
 			}
+
 		.footnote{
 			background: #e1e1e1;
 			font-style: italic;
@@ -127,12 +135,11 @@ body section{
 	}
 }
 
-
-
 @media (min-width: 640px) {
 	body section{
 		width: 400px;
 		margin: 50px;
+
 		header{
 			h1{
 				font-size: 32px;
@@ -141,20 +148,24 @@ body section{
 					font-size: 16px;
 				}
 			}
+
 			h2{
 				font-size: 22px;
 			}
+
 			nav{
 				margin-bottom: 0;
+
 				ul li{
 					font-size: 12px;
 
 					a{
-						padding: 10px 14px;
+						padding: 10px 12px;
 					}
 				}
 			}
 		}
+
 		.background{
 			background-size: auto;
 			position: fixed;
@@ -165,6 +176,7 @@ body section{
 			z-index: -10;
 			height: auto;
 		}
+
 		article{
 			background: rgba(white, 0.9);
 		}
@@ -173,14 +185,7 @@ body section{
 
 @media (min-width: 1024px) {
 	body section{
-		width: 535px;
+		width: 560px;
 		margin: 50px;
-		header{
-			nav{
-				ul li{
-					
-				}
-			}
-		}
 	}
 }
