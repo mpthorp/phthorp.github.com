@@ -116,6 +116,13 @@ body section{
 			}
 		}
 
+		a, a:visited{
+			text-decoration: underline;
+			&:hover{
+				text-decoration: none;
+			}
+		}
+
 		div{
 			display: inline-block;
 			vertical-align: top;
