@@ -162,11 +162,17 @@ body section{
 }
 
 @media (min-width: 640px) {
-	body section .background{
-		height: 300px;
+	body section{
+
+		.background{
+			height: 300px;
+		}
+
+		article{
+			padding: 30px;
+		}
 	}
 }
-
 
 @media (min-width: 920px) {
 	body section{
@@ -192,11 +198,6 @@ body section{
 			}		
 		}
 
-		article{
-			padding: 30px;
-			background: rgba(white, 0.9);
-		}
-
 		.background{
 			background-size: auto;
 			position: fixed;
@@ -206,6 +207,15 @@ body section{
 			left: 0;
 			z-index: -10;
 			height: auto;
+		}
+
+		article{
+			background: rgba(white, 0.9);
+
+			div{
+				width: 49%;
+				margin: 0;
+			}
 		}
 	}
 }
