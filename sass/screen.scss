@@ -19,8 +19,6 @@ a, a:visited{
 }
 
 body section{
-	@include box-shadow(rgba(#000, 0.3) 0 0px 10px);
-
 	header{
 		background: linear-gradient(#535250, #656462);
 		border-bottom: $beige 4px solid;
@@ -163,10 +161,18 @@ body section{
 	}
 }
 
-@media (min-width: 720px) {
+@media (min-width: 640px) {
+	body section .background{
+		height: 300px;
+	}
+}
+
+
+@media (min-width: 920px) {
 	body section{
 		width: 560px;
 		margin: 50px;
+		@include box-shadow(rgba(#000, 0.3) 0 0px 10px);
 
 		header{
 			h1{

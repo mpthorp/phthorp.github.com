@@ -76,13 +76,7 @@ a, a:visited {
   text-decoration: none;
 }
 
-/* line 21, ../sass/screen.scss */
-body section {
-  -webkit-box-shadow: rgba(0, 0, 0, 0.3) 0 0px 10px;
-  -moz-box-shadow: rgba(0, 0, 0, 0.3) 0 0px 10px;
-  box-shadow: rgba(0, 0, 0, 0.3) 0 0px 10px;
-}
-/* line 24, ../sass/screen.scss */
+/* line 22, ../sass/screen.scss */
 body section header {
   background: linear-gradient(#535250, #656462);
   border-bottom: #c4b68e 4px solid;
@@ -92,48 +86,48 @@ body section header {
   text-transform: uppercase;
   padding-top: 30px;
 }
-/* line 33, ../sass/screen.scss */
+/* line 31, ../sass/screen.scss */
 body section header h1 {
   font-size: 1.6em;
 }
-/* line 36, ../sass/screen.scss */
+/* line 34, ../sass/screen.scss */
 body section header h1 b {
   font-size: 14px;
   color: #cbcbcb;
 }
-/* line 42, ../sass/screen.scss */
+/* line 40, ../sass/screen.scss */
 body section header h2 {
   font-size: 1.2em;
   color: #c4b68e;
   margin: 5px 0 20px 0;
 }
-/* line 48, ../sass/screen.scss */
+/* line 46, ../sass/screen.scss */
 body section header nav {
   overflow-x: scroll;
 }
-/* line 51, ../sass/screen.scss */
+/* line 49, ../sass/screen.scss */
 body section header nav ul {
   margin: auto;
   width: 522px;
 }
-/* line 55, ../sass/screen.scss */
+/* line 53, ../sass/screen.scss */
 body section header nav ul li {
   display: inline-block;
   font-size: 12px;
 }
-/* line 59, ../sass/screen.scss */
+/* line 57, ../sass/screen.scss */
 body section header nav ul li a {
   display: block;
   padding: 14px 12px 12px;
 }
-/* line 68, ../sass/screen.scss */
+/* line 66, ../sass/screen.scss */
 body section .background {
   background: url("../images/background1.jpg") center top no-repeat;
   position: relative;
   background-size: 100%;
   height: 160px;
 }
-/* line 75, ../sass/screen.scss */
+/* line 73, ../sass/screen.scss */
 body section article {
   padding: 30px 15px;
   background: white;
@@ -142,7 +136,7 @@ body section article {
   color: #353535;
   line-height: 20px;
 }
-/* line 83, ../sass/screen.scss */
+/* line 81, ../sass/screen.scss */
 body section article h1 {
   font-family: 'Cinzel', serif;
   font-size: 18px;
@@ -152,30 +146,30 @@ body section article h1 {
   border-bottom: #cbcbcb 1px solid;
   text-align: center;
 }
-/* line 93, ../sass/screen.scss */
+/* line 91, ../sass/screen.scss */
 body section article h2 {
   font-weight: bold;
   margin-bottom: 4px;
 }
-/* line 98, ../sass/screen.scss */
+/* line 96, ../sass/screen.scss */
 body section article p {
   margin-bottom: 18px;
 }
-/* line 101, ../sass/screen.scss */
+/* line 99, ../sass/screen.scss */
 body section article p:last-child {
   margin-bottom: 0px;
 }
-/* line 106, ../sass/screen.scss */
+/* line 104, ../sass/screen.scss */
 body section article ul {
   margin-bottom: 18px;
   line-height: 24px;
 }
-/* line 110, ../sass/screen.scss */
+/* line 108, ../sass/screen.scss */
 body section article ul li {
   position: relative;
   text-indent: 16px;
 }
-/* line 114, ../sass/screen.scss */
+/* line 112, ../sass/screen.scss */
 body section article ul li:before {
   position: absolute;
   top: 9px;
@@ -185,28 +179,28 @@ body section article ul li:before {
   height: 5px;
   background: #c4b68e;
 }
-/* line 126, ../sass/screen.scss */
+/* line 124, ../sass/screen.scss */
 body section article a, body section article a:visited {
   text-decoration: underline;
 }
-/* line 128, ../sass/screen.scss */
+/* line 126, ../sass/screen.scss */
 body section article a:hover, body section article a:visited:hover {
   text-decoration: none;
 }
-/* line 133, ../sass/screen.scss */
+/* line 131, ../sass/screen.scss */
 body section article div {
   display: inline-block;
   vertical-align: top;
   width: 49%;
 }
-/* line 139, ../sass/screen.scss */
+/* line 137, ../sass/screen.scss */
 body section article iframe {
   margin-top: 28px;
   -webkit-box-shadow: rgba(0, 0, 0, 0.3) 0 0px 3px;
   -moz-box-shadow: rgba(0, 0, 0, 0.3) 0 0px 3px;
   box-shadow: rgba(0, 0, 0, 0.3) 0 0px 3px;
 }
-/* line 144, ../sass/screen.scss */
+/* line 142, ../sass/screen.scss */
 body section article .footnote {
   background: #e1e1e1;
   font-style: italic;
@@ -215,46 +209,55 @@ body section article .footnote {
 }
 
 @media (min-width: 525px) {
-  /* line 154, ../sass/screen.scss */
+  /* line 152, ../sass/screen.scss */
   body section header nav {
     overflow-x: visible;
     height: auto;
     position: static;
   }
-  /* line 159, ../sass/screen.scss */
+  /* line 157, ../sass/screen.scss */
   body section header nav ul {
     position: static;
     width: auto;
   }
 }
-@media (min-width: 720px) {
-  /* line 167, ../sass/screen.scss */
+@media (min-width: 640px) {
+  /* line 165, ../sass/screen.scss */
+  body section .background {
+    height: 300px;
+  }
+}
+@media (min-width: 920px) {
+  /* line 172, ../sass/screen.scss */
   body section {
     width: 560px;
     margin: 50px;
+    -webkit-box-shadow: rgba(0, 0, 0, 0.3) 0 0px 10px;
+    -moz-box-shadow: rgba(0, 0, 0, 0.3) 0 0px 10px;
+    box-shadow: rgba(0, 0, 0, 0.3) 0 0px 10px;
   }
-  /* line 172, ../sass/screen.scss */
+  /* line 178, ../sass/screen.scss */
   body section header h1 {
     font-size: 32px;
   }
-  /* line 175, ../sass/screen.scss */
+  /* line 181, ../sass/screen.scss */
   body section header h1 b {
     font-size: 16px;
   }
-  /* line 180, ../sass/screen.scss */
+  /* line 186, ../sass/screen.scss */
   body section header h2 {
     font-size: 22px;
   }
-  /* line 184, ../sass/screen.scss */
+  /* line 190, ../sass/screen.scss */
   body section header nav ul li a {
     padding: 10px 12px;
   }
-  /* line 189, ../sass/screen.scss */
+  /* line 195, ../sass/screen.scss */
   body section article {
     padding: 30px;
     background: rgba(255, 255, 255, 0.9);
   }
-  /* line 194, ../sass/screen.scss */
+  /* line 200, ../sass/screen.scss */
   body section .background {
     background-size: auto;
     position: fixed;
