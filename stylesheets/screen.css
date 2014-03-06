@@ -70,19 +70,19 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   text-shadow: rgba(0, 0, 0, 0.4) 1px 1px 1px;
 }
 
-/* line 26, ../sass/screen.scss */
+/* line 16, ../sass/screen.scss */
 a, a:visited {
   color: inherit;
   text-decoration: none;
 }
 
-/* line 31, ../sass/screen.scss */
+/* line 21, ../sass/screen.scss */
 body section {
   -webkit-box-shadow: rgba(0, 0, 0, 0.3) 0 0px 10px;
   -moz-box-shadow: rgba(0, 0, 0, 0.3) 0 0px 10px;
   box-shadow: rgba(0, 0, 0, 0.3) 0 0px 10px;
 }
-/* line 34, ../sass/screen.scss */
+/* line 24, ../sass/screen.scss */
 body section header {
   background: linear-gradient(#535250, #656462);
   border-bottom: #c4b68e 4px solid;
@@ -92,48 +92,48 @@ body section header {
   text-transform: uppercase;
   padding-top: 30px;
 }
-/* line 43, ../sass/screen.scss */
+/* line 33, ../sass/screen.scss */
 body section header h1 {
   font-size: 1.6em;
 }
-/* line 46, ../sass/screen.scss */
+/* line 36, ../sass/screen.scss */
 body section header h1 b {
   font-size: 14px;
   color: #cbcbcb;
 }
-/* line 52, ../sass/screen.scss */
+/* line 42, ../sass/screen.scss */
 body section header h2 {
   font-size: 1.2em;
   color: #c4b68e;
   margin: 5px 0 20px 0;
 }
-/* line 58, ../sass/screen.scss */
+/* line 48, ../sass/screen.scss */
 body section header nav {
   overflow-x: scroll;
 }
-/* line 61, ../sass/screen.scss */
+/* line 51, ../sass/screen.scss */
 body section header nav ul {
   margin: auto;
   width: 522px;
 }
-/* line 65, ../sass/screen.scss */
+/* line 55, ../sass/screen.scss */
 body section header nav ul li {
   display: inline-block;
   font-size: 12px;
 }
-/* line 69, ../sass/screen.scss */
+/* line 59, ../sass/screen.scss */
 body section header nav ul li a {
   display: block;
   padding: 14px 12px 12px;
 }
-/* line 78, ../sass/screen.scss */
+/* line 68, ../sass/screen.scss */
 body section .background {
   background: url("../images/background1.jpg") center top no-repeat;
   position: relative;
   background-size: 100%;
   height: 150px;
 }
-/* line 85, ../sass/screen.scss */
+/* line 75, ../sass/screen.scss */
 body section article {
   padding: 30px 15px;
   background: white;
@@ -142,7 +142,7 @@ body section article {
   color: #353535;
   line-height: 20px;
 }
-/* line 93, ../sass/screen.scss */
+/* line 83, ../sass/screen.scss */
 body section article h1 {
   font-family: 'Cinzel', serif;
   font-size: 18px;
@@ -152,30 +152,30 @@ body section article h1 {
   border-bottom: #cbcbcb 1px solid;
   text-align: center;
 }
-/* line 103, ../sass/screen.scss */
+/* line 93, ../sass/screen.scss */
 body section article h2 {
   font-weight: bold;
   margin-bottom: 4px;
 }
-/* line 108, ../sass/screen.scss */
+/* line 98, ../sass/screen.scss */
 body section article p {
   margin-bottom: 18px;
 }
-/* line 111, ../sass/screen.scss */
+/* line 101, ../sass/screen.scss */
 body section article p:last-child {
   margin-bottom: 0px;
 }
-/* line 116, ../sass/screen.scss */
+/* line 106, ../sass/screen.scss */
 body section article ul {
   margin-bottom: 18px;
   line-height: 24px;
 }
-/* line 120, ../sass/screen.scss */
+/* line 110, ../sass/screen.scss */
 body section article ul li {
   position: relative;
   text-indent: 16px;
 }
-/* line 124, ../sass/screen.scss */
+/* line 114, ../sass/screen.scss */
 body section article ul li:before {
   position: absolute;
   top: 9px;
@@ -185,25 +185,25 @@ body section article ul li:before {
   height: 5px;
   background: #c4b68e;
 }
-/* line 136, ../sass/screen.scss */
+/* line 126, ../sass/screen.scss */
 body section article a, body section article a:visited {
   text-decoration: underline;
 }
-/* line 138, ../sass/screen.scss */
+/* line 128, ../sass/screen.scss */
 body section article a:hover, body section article a:visited:hover {
   text-decoration: none;
 }
-/* line 143, ../sass/screen.scss */
+/* line 133, ../sass/screen.scss */
 body section article div {
   display: inline-block;
   vertical-align: top;
   width: 49%;
 }
-/* line 149, ../sass/screen.scss */
+/* line 139, ../sass/screen.scss */
 body section article iframe {
   margin-top: 28px;
 }
-/* line 153, ../sass/screen.scss */
+/* line 143, ../sass/screen.scss */
 body section article .footnote {
   background: #e1e1e1;
   font-style: italic;
@@ -212,50 +212,50 @@ body section article .footnote {
 }
 
 @media (min-width: 525px) {
-  /* line 163, ../sass/screen.scss */
+  /* line 153, ../sass/screen.scss */
   body section header nav {
     overflow-x: visible;
     height: auto;
     position: static;
   }
-  /* line 168, ../sass/screen.scss */
+  /* line 158, ../sass/screen.scss */
   body section header nav ul {
     position: static;
     width: auto;
   }
 }
 @media (min-width: 720px) {
-  /* line 176, ../sass/screen.scss */
+  /* line 166, ../sass/screen.scss */
   body section {
     width: 400px;
     margin: 50px;
   }
-  /* line 181, ../sass/screen.scss */
+  /* line 171, ../sass/screen.scss */
   body section header h1 {
     font-size: 32px;
   }
-  /* line 184, ../sass/screen.scss */
+  /* line 174, ../sass/screen.scss */
   body section header h1 b {
     font-size: 16px;
   }
-  /* line 189, ../sass/screen.scss */
+  /* line 179, ../sass/screen.scss */
   body section header h2 {
     font-size: 22px;
   }
-  /* line 193, ../sass/screen.scss */
+  /* line 183, ../sass/screen.scss */
   body section header nav ul li {
     font-size: 12px;
   }
-  /* line 196, ../sass/screen.scss */
+  /* line 186, ../sass/screen.scss */
   body section header nav ul li a {
     padding: 10px 12px;
   }
-  /* line 202, ../sass/screen.scss */
+  /* line 192, ../sass/screen.scss */
   body section article {
     padding: 30px;
     background: rgba(255, 255, 255, 0.9);
   }
-  /* line 207, ../sass/screen.scss */
+  /* line 197, ../sass/screen.scss */
   body section .background {
     background-size: auto;
     position: fixed;
@@ -268,7 +268,7 @@ body section article .footnote {
   }
 }
 @media (min-width: 1024px) {
-  /* line 221, ../sass/screen.scss */
+  /* line 211, ../sass/screen.scss */
   body section {
     width: 560px;
     margin: 50px;
