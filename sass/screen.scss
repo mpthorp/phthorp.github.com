@@ -46,13 +46,21 @@ body section{
 		}
 
 		nav{
-			ul li{
-				display: inline-block;
-				font-size: 12px;
+			width: 100%;
+			overflow-x: scroll;
 
-				a{
-					display: block;
-					padding: 14px 12px 12px;
+			ul{
+				margin: auto;
+				width: 520px;
+				
+				li{
+					display: inline-block;
+					font-size: 12px;
+
+					a{
+						display: block;
+						padding: 14px 12px 12px;
+					}
 				}
 			}
 		}
@@ -161,19 +169,25 @@ body section{
 			}
 
 			nav{
-				margin-bottom: 0;
+				overflow-x: visible;
 
-				ul li{
-					font-size: 12px;
+				ul{
+					width: auto;
 
-					a{
-						padding: 10px 12px;
+					li{
+						font-size: 12px;
+
+						a{
+							padding: 10px 12px;
+						}
 					}
 				}
 			}
 		}
+
 		article{
 			padding: 30px;
+			background: rgba(white, 0.9);
 		}
 
 		.background{
@@ -185,10 +199,6 @@ body section{
 			left: 0;
 			z-index: -10;
 			height: auto;
-		}
-
-		article{
-			background: rgba(white, 0.9);
 		}
 	}
 }
