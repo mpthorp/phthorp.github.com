@@ -69,7 +69,7 @@ body section{
 		background: url('../images/background1.jpg') center top no-repeat;
 		position: relative;
 		background-size: 100%;
-		height: 150px;
+		height: 160px;
 	}
 
 	article{
@@ -138,6 +138,7 @@ body section{
 
 		iframe{
 			margin-top: 28px;
+			@include box-shadow(rgba(#000, 0.3) 0 0px 3px);
 			}
 
 		.footnote{
@@ -164,7 +165,7 @@ body section{
 
 @media (min-width: 720px) {
 	body section{
-		width: 400px;
+		width: 560px;
 		margin: 50px;
 
 		header{
@@ -180,13 +181,9 @@ body section{
 				font-size: 22px;
 			}
 
-			nav	ul li{
-				font-size: 12px;
-
-				a{
-					padding: 10px 12px;
-				}	
-			}
+			nav	ul li	a{
+				padding: 10px 12px;
+			}		
 		}
 
 		article{
@@ -204,12 +201,5 @@ body section{
 			z-index: -10;
 			height: auto;
 		}
-	}
-}
-
-@media (min-width: 1024px) {
-	body section{
-		width: 560px;
-		margin: 50px;
 	}
 }

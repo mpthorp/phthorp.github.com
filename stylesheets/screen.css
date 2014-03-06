@@ -131,7 +131,7 @@ body section .background {
   background: url("../images/background1.jpg") center top no-repeat;
   position: relative;
   background-size: 100%;
-  height: 150px;
+  height: 160px;
 }
 /* line 75, ../sass/screen.scss */
 body section article {
@@ -202,8 +202,11 @@ body section article div {
 /* line 139, ../sass/screen.scss */
 body section article iframe {
   margin-top: 28px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.3) 0 0px 3px;
+  -moz-box-shadow: rgba(0, 0, 0, 0.3) 0 0px 3px;
+  box-shadow: rgba(0, 0, 0, 0.3) 0 0px 3px;
 }
-/* line 143, ../sass/screen.scss */
+/* line 144, ../sass/screen.scss */
 body section article .footnote {
   background: #e1e1e1;
   font-style: italic;
@@ -212,50 +215,46 @@ body section article .footnote {
 }
 
 @media (min-width: 525px) {
-  /* line 153, ../sass/screen.scss */
+  /* line 154, ../sass/screen.scss */
   body section header nav {
     overflow-x: visible;
     height: auto;
     position: static;
   }
-  /* line 158, ../sass/screen.scss */
+  /* line 159, ../sass/screen.scss */
   body section header nav ul {
     position: static;
     width: auto;
   }
 }
 @media (min-width: 720px) {
-  /* line 166, ../sass/screen.scss */
+  /* line 167, ../sass/screen.scss */
   body section {
-    width: 400px;
+    width: 560px;
     margin: 50px;
   }
-  /* line 171, ../sass/screen.scss */
+  /* line 172, ../sass/screen.scss */
   body section header h1 {
     font-size: 32px;
   }
-  /* line 174, ../sass/screen.scss */
+  /* line 175, ../sass/screen.scss */
   body section header h1 b {
     font-size: 16px;
   }
-  /* line 179, ../sass/screen.scss */
+  /* line 180, ../sass/screen.scss */
   body section header h2 {
     font-size: 22px;
   }
-  /* line 183, ../sass/screen.scss */
-  body section header nav ul li {
-    font-size: 12px;
-  }
-  /* line 186, ../sass/screen.scss */
+  /* line 184, ../sass/screen.scss */
   body section header nav ul li a {
     padding: 10px 12px;
   }
-  /* line 192, ../sass/screen.scss */
+  /* line 189, ../sass/screen.scss */
   body section article {
     padding: 30px;
     background: rgba(255, 255, 255, 0.9);
   }
-  /* line 197, ../sass/screen.scss */
+  /* line 194, ../sass/screen.scss */
   body section .background {
     background-size: auto;
     position: fixed;
@@ -265,12 +264,5 @@ body section article .footnote {
     left: 0;
     z-index: -10;
     height: auto;
-  }
-}
-@media (min-width: 1024px) {
-  /* line 211, ../sass/screen.scss */
-  body section {
-    width: 560px;
-    margin: 50px;
   }
 }
