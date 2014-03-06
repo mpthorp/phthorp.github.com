@@ -13,6 +13,17 @@ $black: #353535;
 	@include text-shadow(rgba(#000, 0.4) 1px 1px 1px);
 }
 
+.about, .professional{
+	section header nav{
+		left: 0px;
+	}
+}
+.community, .contact{
+	section header nav ul{
+		right: 0px;
+	}
+}
+
 a, a:visited{
 	color: inherit;
 	text-decoration: none;						
@@ -46,10 +57,13 @@ body section{
 		}
 
 		nav{
+			position: relative;
 			width: 100%;
+			height: 38px;
 			overflow-x: scroll;
 
 			ul{
+				position: absolute;
 				margin: auto;
 				width: 520px;
 				
@@ -150,6 +164,19 @@ body section{
 	}
 }
 
+@media (min-width: 525px) {
+	body section header nav{
+		overflow-x: visible;
+		height: auto;
+		position: static;
+
+		ul{
+			position: static;
+			width: auto;
+		}
+	}
+}
+
 @media (min-width: 720px) {
 	body section{
 		width: 400px;
@@ -168,20 +195,12 @@ body section{
 				font-size: 22px;
 			}
 
-			nav{
-				overflow-x: visible;
+			nav	ul li{
+				font-size: 12px;
 
-				ul{
-					width: auto;
-
-					li{
-						font-size: 12px;
-
-						a{
-							padding: 10px 12px;
-						}
-					}
-				}
+				a{
+					padding: 10px 12px;
+				}	
 			}
 		}
 
