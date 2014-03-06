@@ -126,7 +126,7 @@ body section .background {
 }
 /* line 68, ../sass/screen.scss */
 body section article {
-  padding: 30px;
+  padding: 30px 15px;
   background: white;
   font-family: Helvetica;
   font-size: 12px;
@@ -232,7 +232,11 @@ body section article .footnote {
   body section header nav ul li a {
     padding: 10px 12px;
   }
-  /* line 176, ../sass/screen.scss */
+  /* line 175, ../sass/screen.scss */
+  body section article {
+    padding: 30px;
+  }
+  /* line 179, ../sass/screen.scss */
   body section .background {
     background-size: auto;
     position: fixed;
@@ -243,13 +247,13 @@ body section article .footnote {
     z-index: -10;
     height: auto;
   }
-  /* line 187, ../sass/screen.scss */
+  /* line 190, ../sass/screen.scss */
   body section article {
     background: rgba(255, 255, 255, 0.9);
   }
 }
 @media (min-width: 1024px) {
-  /* line 194, ../sass/screen.scss */
+  /* line 197, ../sass/screen.scss */
   body section {
     width: 560px;
     margin: 50px;
