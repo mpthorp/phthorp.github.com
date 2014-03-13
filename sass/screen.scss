@@ -18,132 +18,137 @@ a, a:visited{
 	text-decoration: none;						
 }
 
-body section{
-	header{
-		background: linear-gradient(#535250, #656462);
-		border-bottom: $beige 4px solid;
-		font-family: 'Cinzel', serif;
-		color: #FFF;
-		text-align: center;
-		text-transform: uppercase;
-		padding-top: 30px;
+body{
+	background: $dark-grey;
 
-		h1{
-			font-size: 1.6em;
+	section{
+		header{
+			background: linear-gradient(#535250, #656462);
+			border-bottom: $beige 4px solid;
+			font-family: 'Cinzel', serif;
+			color: #FFF;
+			text-align: center;
+			text-transform: uppercase;
+			padding-top: 30px;
 
-			b{
-				font-size: 14px;
-				color: $light-grey;
+			h1{
+				font-size: 1.6em;
+
+				b{
+					font-size: 14px;
+					color: $light-grey;
+				}
 			}
-		}
 
-		h2{
-			font-size: 1.2em;
-			color: $beige;
-			margin: 5px 0 20px 0;
-		}
+			h2{
+				font-size: 1.2em;
+				color: $beige;
+				margin: 5px 0 20px 0;
+			}
 
-		nav{
-			overflow-x: scroll;
+			nav{
+				overflow-x: scroll;
 
-			ul{
-				margin: auto;
-				width: 522px;
-				
-				li{
-					display: inline-block;
-					font-size: 12px;
+				ul{
+					margin: auto;
+					width: 522px;
+					
+					li{
+						display: inline-block;
+						font-size: 12px;
 
-					a{
-						display: block;
-						padding: 14px 12px 12px;
+						a{
+							display: block;
+							padding: 14px 12px 12px;
+						}
 					}
 				}
 			}
 		}
-	}
 
-	.background{
-		background: url('../images/background1.jpg') center top no-repeat;
-		position: relative;
-		background-size: 100%;
-		height: 160px;
-	}
-
-	article{
-		padding: 30px 15px;
-		background: white;
-		font-family: Helvetica;
-		font-size: 12px;
-		color: $black;
-		line-height: 20px;
-
-		h1{
-			font-family: 'Cinzel', serif;
-			font-size: 18px;
-			color: $dark-grey;
-			padding: 0 60px 10px;
-			margin-bottom: 18px;
-			border-bottom: $light-grey 1px solid;
-			text-align: center;
+		.background{
+			background-image: url('../images/bg_about_640.jpg');
+			background: center top no-repeat;
+			position: relative;
+			background-size: 100%;
+			height: 160px;
 		}
 
-		h2{
-			font-weight: bold;
-			margin-bottom: 4px;
-		}
+		article{
+			padding: 30px 15px;
+			background: white;
+			font-family: Helvetica;
+			font-size: 12px;
+			color: $black;
+			line-height: 20px;
 
-		p{
-			margin-bottom: 18px;
-
-			&:last-child{
-				margin-bottom: 0px;
+			h1{
+				font-family: 'Cinzel', serif;
+				font-size: 18px;
+				color: $dark-grey;
+				padding: 0 60px 10px;
+				margin-bottom: 18px;
+				border-bottom: $light-grey 1px solid;
+				text-align: center;
 			}
-		}
 
-		ul {
-			margin-bottom: 18px;
-			line-height: 24px;
+			h2{
+				font-weight: bold;
+				margin-bottom: 4px;
+			}
 
-			li{
-				position: relative;
-				text-indent: 16px;
+			p{
+				margin-bottom: 18px;
 
-				&:before{
-					position: absolute;
-					top: 9px;
-					left: 0;
-					content: "";
-					width: 5px;
-					height: 5px;
-					background: $beige;
+				&:last-child{
+					margin-bottom: 0px;
 				}
 			}
-		}
 
-		a, a:visited{
-			text-decoration: underline;
-			&:hover{
-				text-decoration: none;
+			ul {
+				margin-bottom: 18px;
+				line-height: 24px;
+
+				li{
+					position: relative;
+					text-indent: 16px;
+
+					&:before{
+						position: absolute;
+						top: 9px;
+						left: 0;
+						content: "";
+						width: 5px;
+						height: 5px;
+						background: $beige;
+					}
+				}
 			}
-		}
 
-		div{
-			display: inline-block;
-			vertical-align: top;
-			width: 49%;
-		}
-
-		iframe{
-			margin-top: 28px;
-			@include box-shadow(rgba(#000, 0.3) 0 0px 3px);
+			a, a:visited{
+				text-decoration: underline;
+				&:hover{
+					text-decoration: none;
+				}
 			}
 
-		.footnote{
-			background: #e1e1e1;
-			font-style: italic;
-			padding: 10px;
-			border: $light-grey 1px solid;
+			div{
+				display: inline-block;
+				vertical-align: top;
+				width: 49%;
+			}
+
+			iframe{
+				margin-top: 28px;
+				@include box-shadow(rgba(#000, 0.3) 0 0px 3px);
+				}
+
+			.footnote{
+				background: #e1e1e1;
+				font-style: italic;
+				padding: 10px;
+				border: $light-grey 1px solid;
+			}
 		}
 	}
 }
@@ -165,6 +170,7 @@ body section{
 	body section{
 
 		.background{
+			background-image: url('../images/bg_about_920.jpg');
 			height: 300px;
 		}
 
@@ -175,6 +181,7 @@ body section{
 }
 
 @media (min-width: 920px) {
+
 	body section{
 		width: 560px;
 		margin: 50px;
@@ -199,7 +206,8 @@ body section{
 		}
 
 		.background{
-			background-size: auto;
+			background-image: url('../images/bg_about_1920.jpg');
+			background-size: 100%;
 			position: fixed;
 			top: 0;
 			right: 0;
