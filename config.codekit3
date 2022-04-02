@@ -232,45 +232,6 @@
       "q" : 100,
       "rq" : 75
     },
-    "\/images\/bg_contact_640.jpg" : {
-      "ft" : 16384,
-      "iS" : 125490,
-      "jF" : 0,
-      "oA" : 0,
-      "oAP" : "\/images\/bg_contact_640.jpg",
-      "oF" : 0,
-      "oIPL" : 0,
-      "opt" : 0,
-      "ou" : "lpckwebp-none",
-      "q" : 100,
-      "rq" : 75
-    },
-    "\/images\/bg_contact_920.jpg" : {
-      "ft" : 16384,
-      "iS" : 242202,
-      "jF" : 0,
-      "oA" : 0,
-      "oAP" : "\/images\/bg_contact_920.jpg",
-      "oF" : 0,
-      "oIPL" : 0,
-      "opt" : 0,
-      "ou" : "lpckwebp-none",
-      "q" : 100,
-      "rq" : 75
-    },
-    "\/images\/bg_contact_1920.jpg" : {
-      "ft" : 16384,
-      "iS" : 834812,
-      "jF" : 0,
-      "oA" : 0,
-      "oAP" : "\/images\/bg_contact_1920.jpg",
-      "oF" : 0,
-      "oIPL" : 0,
-      "opt" : 0,
-      "ou" : "lpckwebp-none",
-      "q" : 100,
-      "rq" : 75
-    },
     "\/index.html" : {
       "cB" : 0,
       "ft" : 8192,
