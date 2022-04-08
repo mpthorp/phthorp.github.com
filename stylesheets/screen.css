@@ -83,8 +83,9 @@ body section nav .active {
 }
 body section .background {
   position: relative;
-  background-size: 100%;
-  height: 160px;
+  background-size: 150%;
+  background-position: top right;
+  height: 200px;
   background-image: url("../images/bg_about_640.jpg");
 }
 body section article {
@@ -145,6 +146,11 @@ body section article .footnote {
   margin-top: 1rem;
 }
 
+@media (min-width: 600px) {
+  body section .background {
+    height: 300px;
+  }
+}
 @media (min-width: 720px) {
   body section header {
     padding: 3rem 0 2rem 0;
@@ -160,7 +166,7 @@ body section article .footnote {
   }
   body section .background {
     background-image: url("../images/bg_about_920.jpg");
-    height: 300px;
+    height: 360px;
   }
   body section article {
     padding: 30px;
