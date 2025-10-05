@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    font-family: 'Merriweather', serif;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-primary-500 text-white px-6 py-3 rounded-md font-medium hover:bg-primary-400 transition-colors duration-200;
+  }
+  
+  .btn-secondary {
+    @apply bg-tertiary-500 text-white px-6 py-3 rounded-md font-medium hover:bg-opacity-90 transition-colors duration-200;
+  }
+  
+}
