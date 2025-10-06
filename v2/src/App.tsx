@@ -9,7 +9,7 @@ import Contact from './pages/Contact';
 
 function App(): JSX.Element {
   return (
-    <Router>
+    <Router basename="/v2">
       <ScrollToTop />
       <Layout>
         <Routes>

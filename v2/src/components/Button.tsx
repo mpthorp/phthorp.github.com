@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 type ButtonVariant = 'primary' | 'secondary' | 'outline' | 'ghost';
 type ButtonSize = 'md' | 'lg';
@@ -39,11 +40,22 @@ const Button: React.FC<ButtonProps> = ({
   const classes = `${baseClasses} ${variants[variant]} ${sizes[size]} ${className}`;
 
   if (href) {
-    return (
-      <a href={href} className={classes} {...props}>
-        {children}
-      </a>
-    );
+    // Check if it's an external link or internal route
+    const isExternal = href.startsWith('http') || href.startsWith('mailto:') || href.startsWith('tel:');
+    
+    if (isExternal) {
+      return (
+        <a href={href} className={classes} {...props}>
+          {children}
+        </a>
+      );
+    } else {
+      return (
+        <Link to={href} className={classes} {...props}>
+          {children}
+        </Link>
+      );
+    }
   }
 
   return (
