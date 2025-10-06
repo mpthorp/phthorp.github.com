@@ -171,28 +171,33 @@ const Navigation: React.FC = () => {
       </header>
 
       {/* Mobile Menu Overlay */}
-      {isMobileMenuOpen && (
-        <div className="fixed inset-0 z-50 md:hidden">
-          {/* Backdrop */}
-          <div 
-            className="fixed inset-0 bg-black bg-opacity-50 transition-opacity"
-            onClick={() => setIsMobileMenuOpen(false)}
-          />
-          
-          {/* Slide-out Menu */}
-          <div className="fixed left-0 top-0 h-full w-80 max-w-[85vw] bg-primary-500 transform transition-transform duration-300 ease-in-out">
+      <div className={`fixed inset-0 z-50 md:hidden transition-all duration-300 ease-out ${
+        isMobileMenuOpen ? 'opacity-100 visible' : 'opacity-0 invisible'
+      }`}>
+        {/* Backdrop */}
+        <div 
+          className={`fixed inset-0 bg-black transition-opacity duration-300 ease-out ${
+            isMobileMenuOpen ? 'bg-opacity-50' : 'bg-opacity-0'
+          }`}
+          onClick={() => setIsMobileMenuOpen(false)}
+        />
+        
+        {/* Slide-out Menu */}
+        <div className={`fixed left-0 top-0 h-full w-80 max-w-[85vw] bg-tertiary-500 transform transition-transform duration-300 ease-out ${
+          isMobileMenuOpen ? 'translate-x-0' : '-translate-x-full'
+        }`}>
             {/* Menu Header */}
-            <div className="flex items-center justify-between p-4 border-b border-primary-400">
+            <div className="flex items-center justify-between p-4 border-b border-tertiary-400">
               <Link 
                 to="/" 
-                className="text-xl font-bold text-white"
+                className="text-xl font-bold text-secondary-100"
                 onClick={() => setIsMobileMenuOpen(false)}
               >
                 Peter Thorp
               </Link>
               <button 
                 onClick={() => setIsMobileMenuOpen(false)}
-                className="p-2 text-white hover:text-neutral-200"
+                className="p-2 text-secondary-100 hover:text-secondary-200"
                 aria-label="Close menu"
               >
                 <svg 
@@ -217,10 +222,10 @@ const Navigation: React.FC = () => {
                 <Link
                   key={item.path}
                   to={item.path}
-                  className={`block px-6 py-4 text-lg font-medium transition-colors duration-200 hover:bg-primary-400 hover:bg-opacity-20 ${
+                  className={`block px-6 py-4 text-lg font-medium transition-colors duration-200 hover:bg-tertiary-400 hover:bg-opacity-30 ${
                     isActive(item.path) 
-                      ? 'text-white bg-primary-400 bg-opacity-20 border-r-4 border-white' 
-                      : 'text-white'
+                      ? 'text-secondary-100 bg-tertiary-400 bg-opacity-30 border-r-4 border-secondary-200' 
+                      : 'text-secondary-100'
                   }`}
                   onClick={() => setIsMobileMenuOpen(false)}
                 >
@@ -228,9 +233,8 @@ const Navigation: React.FC = () => {
                 </Link>
               ))}
             </nav>
-          </div>
         </div>
-      )}
+      </div>
     </>
   );
 };
