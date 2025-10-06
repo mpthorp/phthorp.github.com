@@ -219,10 +219,10 @@ const Home: React.FC = () => {
                     </div>
                   </li>
                 </ul>
-                <Button variant="primary" size="lg" href="/practice">
-                  Learn More
-                </Button>
-                <div >
+                <div className="flex justify-center md:justify-start">
+                  <Button variant="primary" size="lg" href="/practice">
+                    Learn More
+                  </Button>
                 </div>
               </div>
               <div>
