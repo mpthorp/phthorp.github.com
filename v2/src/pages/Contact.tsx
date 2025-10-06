@@ -316,7 +316,7 @@ const Contact: React.FC = () => {
 
             <div className="relative md:min-w-[40%] lg:min-w-[35%] h-auto mx-auto">
               <img
-                src="/images/artwork.png"
+                src="/v2/images/artwork.png"
                 alt="Legal scales and tools"
                 className="hidden md:block w-auto h-auto rounded-lg"
                 onError={(e) => {
@@ -326,7 +326,7 @@ const Contact: React.FC = () => {
                 }}
               />
               <img
-                src="/images/artwork-landscape.png"
+                src="/v2/images/artwork-landscape.png"
                 alt="Legal scales and tools"
                 className="md:hidden w-auto h-auto rounded-lg"
                 onError={(e) => {

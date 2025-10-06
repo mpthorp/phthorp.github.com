@@ -105,7 +105,7 @@ const Community: React.FC = () => {
             </div>
             <div className="relative md:min-w-[40%] lg:min-w-[35%] h-auto mx-auto">
               <img
-                src="/images/peter-ponsonby.png"
+                src="/v2/images/peter-ponsonby.png"
                 alt="Peter Thorp wearing his Ponsonby Rugby tie and badge."
                 className="hidden md:block w-auto h-auto rounded-lg"
                 onError={(e) => {
@@ -115,7 +115,7 @@ const Community: React.FC = () => {
                 }}
               />
               <img
-                src="/images/peter-ponsonby-landscape.png"
+                src="/v2/images/peter-ponsonby-landscape.png"
                 alt="Peter Thorp wearing his Ponsonby Rugby tie and badge."
                 className="md:hidden w-auto h-auto rounded-lg"
                 onError={(e) => {

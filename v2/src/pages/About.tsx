@@ -88,7 +88,7 @@ const About: React.FC = () => {
 
             <div className="relative md:min-w-[40%] lg:min-w-[35%] h-auto mx-auto">
               <img
-                src="/images/peter-chair.png"
+                src="/v2/images/peter-chair.png"
                 alt="Peter Thorp, Auckland barrister, in his office discussing legal strategy and client matters"
                 className="hidden md:block w-auto h-auto rounded-lg"
                 onError={(e) => {
@@ -98,7 +98,7 @@ const About: React.FC = () => {
                 }}
               />
               <img
-                src="/images/peter-chair-landscape.png"
+                src="/v2/images/peter-chair-landscape.png"
                 alt="Legal scales and tools"
                 className="md:hidden w-auto h-auto rounded-lg"
                 onError={(e) => {

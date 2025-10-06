@@ -7,7 +7,7 @@ export const lawyerStructuredData = {
   "alternateName": "Peter Thorp Barrister",
   "description": "Experienced barrister with over 50 years of expertise in commercial litigation, administrative law, and civil disputes in New Zealand.",
   "url": "https://peterthorp.co.nz",
-  "image": "https://peterthorp.co.nz/images/header-peter.png",
+  "image": "https://peterthorp.co.nz/v2/images/header-peter.png",
   "telephone": "+64-21-950-198",
   "email": "peter@thorp.co.nz",
   "address": {
@@ -112,8 +112,8 @@ export const organizationStructuredData = {
   "name": "Peter Thorp Barrister",
   "description": "Premier barrister services in Auckland, New Zealand, specializing in commercial litigation and civil disputes.",
   "url": "https://peterthorp.co.nz",
-  "logo": "https://peterthorp.co.nz/images/logo.png",
-  "image": "https://peterthorp.co.nz/images/header-peter.png",
+  "logo": "https://peterthorp.co.nz/v2/images/logo.png",
+  "image": "https://peterthorp.co.nz/v2/images/header-peter.png",
   "telephone": "+64-21-950-198",
   "email": "peter@thorp.co.nz",
   "foundingDate": "1991",
@@ -190,7 +190,7 @@ export const websiteStructuredData = {
     "name": "Peter Thorp Barrister",
     "logo": {
       "@type": "ImageObject",
-      "url": "https://peterthorp.co.nz/images/logo.png"
+      "url": "https://peterthorp.co.nz/v2/images/logo.png"
     }
   },
   "author": {

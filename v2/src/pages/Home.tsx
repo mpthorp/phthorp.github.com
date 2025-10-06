@@ -119,7 +119,7 @@ const Home: React.FC = () => {
       <Section
         className="relative overflow-hidden bg-cover bg-center bg-no-repeat lg:max-h-[540px] flex items-end !py-0"
         style={{
-          backgroundImage: `url('/images/header-background.png')`
+          backgroundImage: `url('/v2/images/header-background.png')`
         }}
       >
         <Container className="relative">
@@ -143,7 +143,7 @@ const Home: React.FC = () => {
                 }}
               >
                 <img
-                  src="/images/header-peter.png"
+                  src="/v2/images/header-peter.png"
                   alt="Peter Thorp, experienced Auckland barrister with over 50 years of legal expertise"
                   className="w-auto h-full"
                   onError={(e: React.SyntheticEvent<HTMLImageElement, Event>) => {
@@ -228,7 +228,7 @@ const Home: React.FC = () => {
               <div>
                 {/* Desktop image */}
                 <img
-                  src="/images/books.png"
+                  src="/v2/images/books.png"
                   alt="Legal reference books and law texts used by Peter Thorp for commercial litigation research"
                   className="hidden md:block w-auto h-full rounded-lg"
                   onError={(e: React.SyntheticEvent<HTMLImageElement, Event>) => {
@@ -242,7 +242,7 @@ const Home: React.FC = () => {
                 />
                 {/* Mobile image */}
                 <img
-                  src="/images/books-landscape.png"
+                  src="/v2/images/books-landscape.png"
                   alt="Legal reference books and law texts used by Peter Thorp for commercial litigation research"
                   className="block md:hidden w-auto h-full rounded-lg"
                   onError={(e: React.SyntheticEvent<HTMLImageElement, Event>) => {

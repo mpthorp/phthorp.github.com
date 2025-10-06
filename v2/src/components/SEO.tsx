@@ -29,7 +29,7 @@ const SEO: React.FC<SEOProps> = ({
     "legal counsel"
   ],
   canonicalUrl = "https://peterthorp.co.nz",
-  ogImage = "/images/peter-thorp-og.jpg",
+  ogImage = "/v2/images/peter-thorp-og.jpg",
   ogType = "website",
   twitterCard = "summary_large_image",
   structuredData,
