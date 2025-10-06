@@ -117,7 +117,7 @@ const Home: React.FC = () => {
       />
       {/* Hero Header Section - Clean with just name, title, and image */}
       <Section
-        className="relative overflow-hidden bg-cover bg-center bg-no-repeat lg:max-h-[540px] flex items-end !py-0"
+        className="relative overflow-hidden bg-cover bg-center bg-no-repeat min-h-[100vh] max-h-[100vh] md:max-h-[80vh] lg:max-h-[540px] flex items-center !py-0"
         style={{
           backgroundImage: `url('/v2/images/header-background.png')`
         }}
@@ -135,7 +135,7 @@ const Home: React.FC = () => {
             </div>
 
             {/* Right Image - Peter's Photo */}
-            <div className="relative overflow-hidden">
+            <div className="relative overflow-hidden max-h-[70vh] md:max-h-full">
               <div
                 className="ml-20 md:ml-0 relative lg:w-full max-w-md mx-auto transition-transform duration-100 ease-out"
                 style={{
@@ -145,7 +145,7 @@ const Home: React.FC = () => {
                 <img
                   src="/v2/images/header-peter.png"
                   alt="Peter Thorp, experienced Auckland barrister with over 50 years of legal expertise"
-                  className="w-auto h-full"
+                  className="w-auto h-full max-h-[70vh] md:max-h-full object-contain"
                   onError={(e: React.SyntheticEvent<HTMLImageElement, Event>) => {
                     const target = e.target as HTMLImageElement;
                     target.style.display = 'none';
