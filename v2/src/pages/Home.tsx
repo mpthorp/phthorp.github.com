@@ -117,7 +117,7 @@ const Home: React.FC = () => {
       />
       {/* Hero Header Section - Clean with just name, title, and image */}
       <Section
-        className="relative overflow-hidden bg-cover bg-center bg-no-repeat lg:max-h-[540px] flex items-end !py-0"
+        className="relative overflow-hidden bg-cover bg-center bg-no-repeat flex items-end !py-0"
         style={{
           backgroundImage: `url('/v2/images/header-background.png')`
         }}
@@ -145,7 +145,7 @@ const Home: React.FC = () => {
                 <img
                   src="/v2/images/header-peter.png"
                   alt="Peter Thorp, experienced Auckland barrister with over 50 years of legal expertise"
-                  className="w-auto h-full"
+                  className="w-auto h-auto"
                   onError={(e: React.SyntheticEvent<HTMLImageElement, Event>) => {
                     const target = e.target as HTMLImageElement;
                     target.style.display = 'none';
@@ -198,21 +198,21 @@ const Home: React.FC = () => {
                 </P.lg>
                 <ul>
                   <li className="flex flex-row gap-4">
-                    <Icon name="bullet" className="min-w-4 h-4 text-secondary-500 mt-2" />
+                    <Icon name="bullet" className="min-w-4 w-4 h-4 text-secondary-500 mt-2" />
                     <div>
                       <H4>A Collaborative Approach</H4>
                       <P>An approachable style making complex legal matters manageable.</P>
                     </div>
                   </li>
                   <li className="flex flex-row gap-4">
-                    <Icon name="bullet" className="min-w-4 h-4 text-secondary-500 mt-2" />
+                    <Icon name="bullet" className="min-w-4 w-4 h-4 text-secondary-500 mt-2" />
                     <div>
                       <H4>Strategic Insight</H4>
                       <P>A thorough, analytical approach ensuring every legal strategy is grounded in fact and law.</P>
                     </div>
                   </li>
                   <li className="flex flex-row gap-4">
-                    <Icon name="bullet" className="min-w-4 h-4 text-secondary-500 mt-2" />
+                    <Icon name="bullet" className="min-w-4 w-4 h-4 text-secondary-500 mt-2" />
                     <div>
                       <H4>Commercially Driven Advice</H4>
                       <P>Delivering tailored advice designed to achieve practical, commercially viable outcomes.</P>
@@ -244,7 +244,7 @@ const Home: React.FC = () => {
                 <img
                   src="/v2/images/books-landscape.png"
                   alt="Legal reference books and law texts used by Peter Thorp for commercial litigation research"
-                  className="block md:hidden w-auto h-full rounded-lg"
+                  className="block md:hidden w-full h-auto rounded-lg"
                   onError={(e: React.SyntheticEvent<HTMLImageElement, Event>) => {
                     const target = e.target as HTMLImageElement;
                     target.style.display = 'none';
@@ -286,7 +286,7 @@ const Home: React.FC = () => {
             </P.lg>
           </div>
 
-          <div className="grid grid-cols-1 place-items-center md:grid-cols-2 md:place-items-stretch md:gap-6 lg:grid-cols-3 lg:gap-10 ">
+          <div className="grid grid-cols-1 place-items-center md:grid-cols-2 md:place-items-stretch gap-6 md:gap-6 lg:grid-cols-3 lg:gap-10 ">
             {services.map((service, index) => (
               <ServiceCard
                 key={index}

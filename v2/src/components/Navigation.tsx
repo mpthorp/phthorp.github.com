@@ -187,12 +187,10 @@ const Navigation: React.FC = () => {
           <div className="flex items-start justify-between py-4 pl-6 pr-4">
             <Link
               to="/"
-              className="text-secondary-100"
+              className="pt-1 text-2xl font-bold text-secondary-100"
               onClick={() => setIsMobileMenuOpen(false)}
             >
-              <h1 className="text-2xl font-bold">Peter Thorp</h1>
-              <p className="text-lg">Barrister</p>
-             
+              Peter Thorp
             </Link>
             <button
               onClick={() => setIsMobileMenuOpen(false)}
@@ -222,8 +220,8 @@ const Navigation: React.FC = () => {
                 key={item.path}
                 to={item.path}
                 className={`px-6 py-4 text-lg font-medium transition-colors duration-200 hover:bg-tertiary-400 hover:bg-opacity-30 relative ${isActive(item.path)
-                    ? 'text-secondary-100'
-                    : 'text-secondary-100'
+                  ? 'text-secondary-100'
+                  : 'text-secondary-100'
                   }`}
                 onClick={() => setIsMobileMenuOpen(false)}
               >
