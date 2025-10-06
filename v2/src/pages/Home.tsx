@@ -197,22 +197,22 @@ const Home: React.FC = () => {
                   Clients value Peter's unwavering commitment to achieving the best possible outcome. He is known for:
                 </P.lg>
                 <ul>
-                  <li className="flex flex-row gap-3 md:gap-4">
-                    <Icon name="bullet" className="min-w-4 w-4 h-4 text-secondary-500 mt-1 md:mt-2" />
+                  <li className="flex flex-row gap-3">
+                    <Icon name="bullet" className="min-w-4 w-4 h-4 text-secondary-500 mt-1 lg:mt-2" />
                     <div>
                       <H4>A Collaborative Approach</H4>
                       <P>An approachable style making complex legal matters manageable.</P>
                     </div>
                   </li>
-                  <li className="flex flex-row gap-3 md:gap-4">
-                    <Icon name="bullet" className="min-w-4 w-4 h-4 text-secondary-500 mt-1 md:mt-2" />
+                  <li className="flex flex-row gap-3">
+                    <Icon name="bullet" className="min-w-4 w-4 h-4 text-secondary-500 mt-1 lg:mt-2" />
                     <div>
                       <H4>Strategic Insight</H4>
                       <P>A thorough, analytical approach ensuring every legal strategy is grounded in fact and law.</P>
                     </div>
                   </li>
-                  <li className="flex flex-row gap-4">
-                    <Icon name="bullet" className="min-w-4 w-4 h-4 text-secondary-500 mt-1 md:mt-2" />
+                  <li className="flex flex-row gap-3">
+                    <Icon name="bullet" className="min-w-4 w-4 h-4 text-secondary-500 mt-1 lg:mt-2" />
                     <div>
                       <H4>Commercially Driven Advice</H4>
                       <P>Delivering tailored advice designed to achieve practical, commercially viable outcomes.</P>

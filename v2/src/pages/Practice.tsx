@@ -80,15 +80,15 @@ const Practice: React.FC = () => {
                 and involves a wide range of legal areas including:
               </P>
               <ul className="flex flex-col gap-2 mb-10">
-                <li className="flex gap-3"><Icon name="bullet" className="w-4 h-4 text-secondary-500 mt-2" />Commercial Litigation</li>
-                <li className="flex gap-3"><Icon name="bullet" className="w-4 h-4 text-secondary-500 mt-2" />Administrative Law</li>
-                <li className="flex gap-3"><Icon name="bullet" className="w-4 h-4 text-secondary-500 mt-2" />Company Law and Trusts</li>
-                <li className="flex gap-3"><Icon name="bullet" className="w-4 h-4 text-secondary-500 mt-2" />Contract and Tort</li>
-                <li className="flex gap-3"><Icon name="bullet" className="w-4 h-4 text-secondary-500 mt-2" />Survey Law</li>
-                <li className="flex gap-3"><Icon name="bullet" className="w-4 h-4 text-secondary-500 mt-2" />Construction Law</li>
-                <li className="flex gap-3"><Icon name="bullet" className="w-4 h-4 text-secondary-500 mt-2" />Land Law</li>
-                <li className="flex gap-3"><Icon name="bullet" className="w-4 h-4 text-secondary-500 mt-2" />Insurance Law</li>
-                <li className="flex gap-3"><Icon name="bullet" className="w-4 h-4 text-secondary-500 mt-2" />Intellectual Property</li>
+                <li className="flex gap-3"><Icon name="bullet" className="w-4 h-4 text-secondary-500 mt-1 lg:mt-2" />Commercial Litigation</li>
+                <li className="flex gap-3"><Icon name="bullet" className="w-4 h-4 text-secondary-500 mt-1 lg:mt-2" />Administrative Law</li>
+                <li className="flex gap-3"><Icon name="bullet" className="w-4 h-4 text-secondary-500 mt-1 lg:mt-2" />Company Law and Trusts</li>
+                <li className="flex gap-3"><Icon name="bullet" className="w-4 h-4 text-secondary-500 mt-1 lg:mt-2" />Contract and Tort</li>
+                <li className="flex gap-3"><Icon name="bullet" className="w-4 h-4 text-secondary-500 mt-1 lg:mt-2" />Survey Law</li>
+                <li className="flex gap-3"><Icon name="bullet" className="w-4 h-4 text-secondary-500 mt-1 lg:mt-2" />Construction Law</li>
+                <li className="flex gap-3"><Icon name="bullet" className="w-4 h-4 text-secondary-500 mt-1 lg:mt-2" />Land Law</li>
+                <li className="flex gap-3"><Icon name="bullet" className="w-4 h-4 text-secondary-500 mt-1 lg:mt-2" />Insurance Law</li>
+                <li className="flex gap-3"><Icon name="bullet" className="w-4 h-4 text-secondary-500 mt-1 lg:mt-2" />Intellectual Property</li>
               </ul>
               <P>Peter has been retained as lead counsel in a number of cases involving novel questions of law,
                 some of which are leading cases in their field. Peter has also been retained in cases in Australia and the Cook Islands.</P>
