@@ -197,22 +197,22 @@ const Home: React.FC = () => {
                   Clients value Peter's unwavering commitment to achieving the best possible outcome. He is known for:
                 </P.lg>
                 <ul>
-                  <li className="flex flex-row gap-4">
-                    <Icon name="bullet" className="min-w-4 w-4 h-4 text-secondary-500 mt-2" />
+                  <li className="flex flex-row gap-3 md:gap-4">
+                    <Icon name="bullet" className="min-w-4 w-4 h-4 text-secondary-500 mt-1 md:mt-2" />
                     <div>
                       <H4>A Collaborative Approach</H4>
                       <P>An approachable style making complex legal matters manageable.</P>
                     </div>
                   </li>
-                  <li className="flex flex-row gap-4">
-                    <Icon name="bullet" className="min-w-4 w-4 h-4 text-secondary-500 mt-2" />
+                  <li className="flex flex-row gap-3 md:gap-4">
+                    <Icon name="bullet" className="min-w-4 w-4 h-4 text-secondary-500 mt-1 md:mt-2" />
                     <div>
                       <H4>Strategic Insight</H4>
                       <P>A thorough, analytical approach ensuring every legal strategy is grounded in fact and law.</P>
                     </div>
                   </li>
                   <li className="flex flex-row gap-4">
-                    <Icon name="bullet" className="min-w-4 w-4 h-4 text-secondary-500 mt-2" />
+                    <Icon name="bullet" className="min-w-4 w-4 h-4 text-secondary-500 mt-1 md:mt-2" />
                     <div>
                       <H4>Commercially Driven Advice</H4>
                       <P>Delivering tailored advice designed to achieve practical, commercially viable outcomes.</P>
@@ -278,7 +278,7 @@ const Home: React.FC = () => {
       {/* Key Services Section */}
       <Section>
         <Container>
-          <div className="text-center mb-16">
+          <div className="text-center mb-16 lg:mb-20">
             <H2 className="mb-4">Key Services</H2>
             <P.lg>
               Peter's practice covers a wide range of commercial disputes, always with a focus on practical,
@@ -306,7 +306,7 @@ const Home: React.FC = () => {
             <H2 className="font-bold">
               Ready to Seek Experienced Advocacy?
             </H2>
-            <P.lg>
+            <P.lg className="pb-4 md:pb-5">
               Peter welcomes inquiries from clients, lawyers, and organizations seeking experienced advice.
               He is available to accept briefs through an instructing solicitor, though you may also contact him
               directly and he will make all necessary arrangements.

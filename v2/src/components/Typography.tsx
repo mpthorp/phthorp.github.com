@@ -10,7 +10,7 @@ interface TypographyProps {
 // H1 Component - 64px font, 130% line-height
 export const H1: React.FC<TypographyProps> = ({ children, className = '', ...props }) => {
   return (
-    <h1 className={`text-[48px] lg:text-[64px] leading-[130%] text-primary-500 font-bold mt-0 ${className}`} {...props}>
+    <h1 className={`text-[40px] md:text-[48px] lg:text-[64px] leading-[130%] text-primary-500 font-bold mt-0 ${className}`} {...props}>
       {children}
     </h1>
   );
@@ -21,7 +21,7 @@ export const H2: React.FC<TypographyProps> = ({ children, className = '', ...pro
   // Set default margin-bottom only if no margin-bottom class is provided
   const defaultMargin = className.includes('mb-') ? '' : 'mb-6 md:mb-8';
   return (
-    <h2 className={`text-[32px] lg:text-[40px] leading-[130%] text-primary-500 font-bold mt-0 ${defaultMargin} ${className}`} {...props}>
+    <h2 className={`text-[28px] md:text-[32px] lg:text-[40px] leading-[130%] text-primary-500 font-bold mt-0 ${defaultMargin} ${className}`} {...props}>
       {children}
     </h2>
   );
@@ -41,7 +41,7 @@ export const H3: React.FC<TypographyProps> = ({ children, className = '', ...pro
 // H4 Component - 24px font, 130% line-height
 export const H4: React.FC<TypographyProps> = ({ children, className = '', ...props }) => {
   // Set default margin-bottom only if no margin-bottom class is provided
-  const defaultMargin = className.includes('mb-') ? '' : 'mb-3 md:mb-4';
+  const defaultMargin = className.includes('mb-') ? '' : 'mb-1 md:mb-2';
   return (
     <h4 className={`text-[20px] lg:text-[24px] leading-[130%] text-primary-500 font-bold mt-0 ${defaultMargin} ${className}`} {...props}>
       {children}
@@ -56,7 +56,7 @@ const P_XL: React.FC<TypographyProps> = ({ children, className = '', ...props })
   // Set default margin-bottom only if no margin-bottom class is provided
   const defaultMargin = className.includes('mb-') ? '' : 'mb-10';
   return (
-    <p className={`text-[24px] lg:text-[32px] leading-[160%] text-neutral-500 mt-0 ${defaultMargin} ${className}`} {...props}>
+    <p className={`text-[20px] md:text-[24px] lg:text-[32px] leading-[160%] text-neutral-500 mt-0 ${defaultMargin} ${className}`} {...props}>
       {children}
     </p>
   );
