@@ -173,7 +173,7 @@ const Home: React.FC = () => {
       {/* Introduction Section */}
       <Section className="!pb-0">
         <Container>
-          <div className="text-center space-y-16 text-neutral-500">
+          <div className="text-center space-y-8 md:space-y-16 text-neutral-500">
             <P.xl>
               Peter is a trial and appellate advocate with over five decades of experience, principally before New Zealand's senior civil courts but also in Australia and the Cook Islands.
             </P.xl>
@@ -186,12 +186,12 @@ const Home: React.FC = () => {
       <Section>
         <Container className="!max-w-5xl">
           <div>
-            <div className="text-center mb-16">
+            <div className="text-center mb-8 lg:mb-16">
               <H2>
                 Your Partner in Complex Disputes
               </H2>
             </div>
-            <div className="flex flex-col-reverse md:flex-row gap-16">
+            <div className="flex flex-col-reverse md:flex-row gap-8 lg:gap-16">
               <div>
                 <P.lg>
                   Clients value Peter's unwavering commitment to achieving the best possible outcome. He is known for:
@@ -230,7 +230,7 @@ const Home: React.FC = () => {
                 <img
                   src="/v2/images/books.png"
                   alt="Legal reference books and law texts used by Peter Thorp for commercial litigation research"
-                  className="hidden md:block w-auto h-full rounded-lg"
+                  className="hidden md:block w-auto h-auto rounded-lg"
                   onError={(e: React.SyntheticEvent<HTMLImageElement, Event>) => {
                     const target = e.target as HTMLImageElement;
                     target.style.display = 'none';
