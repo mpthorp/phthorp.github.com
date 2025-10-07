@@ -1,0 +1,38 @@
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://peterthorp.co.nz/sitemap.xml
+
+# Crawl-delay for courtesy (optional)
+Crawl-delay: 1
+
+# Block any sensitive or admin paths (none currently)
+# Disallow: /admin/
+# Disallow: /private/
+
+# Allow common SEO and verification files
+Allow: /favicon.ico
+Allow: /apple-touch-icon.png
+Allow: /browserconfig.xml
+Allow: /manifest.json
+
+# Common bot access
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: Slurp
+Allow: /
+
+# Social media crawlers
+User-agent: facebookexternalhit
+Allow: /
+
+User-agent: Twitterbot
+Allow: /
+
+User-agent: LinkedInBot
+Allow: /
