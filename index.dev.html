@@ -6,13 +6,13 @@
     <meta name="theme-color" content="#222C4D" />
     
     <!-- Favicons -->
-    <link rel="icon" type="image/x-icon" href="/assets/favicon-CsY8qBGO.ico" />
-    <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16x16-C8FCRvvi.png" />
-    <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32x32-Ca4d9d5g.png" />
+    <link rel="icon" type="image/x-icon" href="/icons/favicon.ico" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/icons/favicon-16x16.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/icons/favicon-32x32.png" />
     <link rel="icon" type="image/svg+xml" href="/icons/favicon.svg" />
-    <link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon-Tclv5zwI.png" />
-    <link rel="icon" type="image/png" sizes="192x192" href="/assets/android-chrome-192x192-CKWdrN_J.png" />
-    <link rel="icon" type="image/png" sizes="512x512" href="/assets/android-chrome-512x512-DVyFfv3o.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/icons/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="192x192" href="/icons/android-chrome-192x192.png" />
+    <link rel="icon" type="image/png" sizes="512x512" href="/icons/android-chrome-512x512.png" />
     
     <!-- Web App Manifest -->
     <link rel="manifest" href="/manifest.json" />
@@ -24,11 +24,34 @@
     <!-- DNS prefetch for potential external resources -->
     <link rel="dns-prefetch" href="https://www.google-analytics.com">
     
+    <!-- Single Page Apps for GitHub Pages -->
+    <script type="text/javascript">
+      // Single Page Apps for GitHub Pages
+      // MIT License
+      // https://github.com/rafgraph/spa-github-pages
+      // This script checks to see if a redirect is present in the query string,
+      // converts it back into the correct url and adds it to the
+      // browser's history using window.history.replaceState(...),
+      // which won't cause the browser to attempt to load the new url.
+      // When the single page app is loaded further down in this file,
+      // the correct url will be waiting in the browser's history for
+      // the single page app to route accordingly.
+      (function(l) {
+        if (l.search[1] === '/' ) {
+          var decoded = l.search.slice(1).split('&').map(function(s) { 
+            return s.replace(/~and~/g, '&')
+          }).join('?');
+          window.history.replaceState(null, null,
+              l.pathname.slice(0, -1) + decoded + l.hash
+          );
+        }
+      }(window.location))
+    </script>
+    
     <!-- Default title - will be overridden by React Helmet -->
     <title>Peter Thorp - Experienced Barrister | Auckland, New Zealand</title>
     <meta name="description" content="Peter Thorp is an experienced barrister with over 50 years of expertise in commercial litigation, administrative law, and civil disputes. Based in Auckland, New Zealand." />
-    <script type="module" crossorigin src="/assets/index-2eWTMTuz.js"></script>
-    <link rel="stylesheet" crossorigin href="/assets/index-BS9XwI0m.css">
+    <script type="module" src="/src/main.tsx"></script>
   </head>
   <body>
     <div id="root"></div>
