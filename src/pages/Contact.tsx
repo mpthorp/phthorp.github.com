@@ -94,7 +94,7 @@ const Contact: React.FC = () => {
       /\b(buy now|click here|free|winner|congratulations)\b/gi,
       /\b\d{10,}\b/g, // Long numbers
     ];
-    
+
     const allText = `${formData.name} ${formData.email} ${formData.message}`.toLowerCase();
     for (const pattern of spamPatterns) {
       if (pattern.test(allText)) {
@@ -147,7 +147,7 @@ const Contact: React.FC = () => {
         emailData,
         EMAILJS_PUBLIC_KEY
       );
-      
+
 
       setIsSubmitted(true);
     } catch (error) {
@@ -218,7 +218,7 @@ const Contact: React.FC = () => {
                 <ConfirmationMessage />
               ) : (
                 <form onSubmit={handleSubmit} className="mb-20">
-                  <div className="mb-10">
+                  <div className="mb-8 md:mb-10">
                     <label htmlFor="name" className="block mb-2">
                       Your Name *
                     </label>
@@ -236,7 +236,7 @@ const Contact: React.FC = () => {
                       <p className="mt-1 text-sm" style={{ color: '#951A37' }}>{errors.name}</p>
                     )}
                   </div>
-                  <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 mb-10">
+                  <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 mb-8 md:mb-10">
                     <div>
                       <label htmlFor="email" className="block mb-2">
                         Email Address *
