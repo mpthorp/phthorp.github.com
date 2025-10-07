@@ -3,6 +3,7 @@ node_modules/
 
 # Build outputs (temporary)
 dist/
+assets/
 
 # OS files
 .DS_Store
