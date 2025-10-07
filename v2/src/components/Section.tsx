@@ -14,7 +14,7 @@ export const Section: React.FC<SectionProps> = ({
 }) => {
   return (
     <section
-      className={`flex flex-col px-6 py-20 md:px-8 md:py-20 lg:py-16 lg:py-32 gap-8 md:gap-16 lg:gap-32 ${className}`}
+      className={`flex flex-col px-6 md:px-8 py-20md:py-20 lg:py-16 lg:py-32 gap-8 md:gap-16 lg:gap-32 ${className}`}
       style={style}
     >
       {children}

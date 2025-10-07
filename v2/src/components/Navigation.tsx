@@ -115,9 +115,9 @@ const Navigation: React.FC = () => {
 
   return (
     <>
-      <header className="bg-tertiary-500 text-secondary-200 relative z-40 sticky top-0 px-5 md:px-8 lg:px-16">
+      <header className="bg-tertiary-500 text-secondary-200 relative z-40 sticky top-0 px-6 md:px-8">
         <Container>
-          <div className="flex items-center py-2 md:py-6">
+          <div className="flex items-center py-2 md:py-4 lg:py-6">
             {/* Mobile Menu Button - Left Side on Mobile */}
             <button
               className="md:hidden p-2 -mb-1 hover:text-secondary-500"
@@ -131,16 +131,16 @@ const Navigation: React.FC = () => {
             <div className="flex-1 md:flex-none">
               <Link
                 to="/"
-                className="text-2xl font-bold hover:text-secondary-500 transition-colors duration-200 block mr-12 md:mr-0 text-center md:text-left"
+                className="flex flex-col items-center justify-center md:items-start lg:items-end md:justify-start lg:gap-2 lg:flex-row text-lg md:text-xl lg:text-2xl font-bold hover:text-secondary-500 transition-colors duration-200 block mr-12 md:mr-0"
               >
-                Peter Thorp
+                Peter Thorp<span className="text-xs font-normal mb-1">LLB (HONS)</span>
               </Link>
             </div>
 
             {/* Desktop Navigation */}
             <nav
               ref={navRef}
-              className="hidden md:flex ml-auto relative"
+              className="hidden md:flex gap-2 md:gap-4 ml-auto relative"
               onMouseLeave={handleMouseLeave}
             >
               {navItems.map((item) => (
@@ -148,7 +148,7 @@ const Navigation: React.FC = () => {
                   key={item.path}
                   to={item.path}
                   data-path={item.path}
-                  className="md:mx-2 lg:mx-4 text-sm lg:text-base font-medium transition-colors duration-200 py-1 hover:text-secondary-500 relative z-10"
+                  className="md:text-base font-medium transition-colors duration-200 py-1 hover:text-secondary-500 relative z-10"
                   onMouseEnter={handleMouseEnter}
                 >
                   {item.name}
@@ -187,10 +187,10 @@ const Navigation: React.FC = () => {
           <div className="flex items-start justify-between py-4 pl-6 pr-4">
             <Link
               to="/"
-              className="pt-1 text-2xl font-bold text-secondary-100"
+              className="pt-1 text-2xl font-bold text-secondary-100 flex flex-col gap-1"
               onClick={() => setIsMobileMenuOpen(false)}
             >
-              Peter Thorp
+              Peter Thorp<span className="text-xs font-normal mb-1">LLB (HONS)</span>
             </Link>
             <button
               onClick={() => setIsMobileMenuOpen(false)}
