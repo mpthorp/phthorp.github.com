@@ -236,7 +236,7 @@ const Contact: React.FC = () => {
                       <p className="mt-1 text-sm" style={{ color: '#951A37' }}>{errors.name}</p>
                     )}
                   </div>
-                  <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 mb-8 md:mb-10">
+                  <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-10 mb-8 md:mb-10">
                     <div>
                       <label htmlFor="email" className="block mb-2">
                         Email Address *
